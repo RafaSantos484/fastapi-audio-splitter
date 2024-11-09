@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = ""
+authors = ["rafael.santos <rafaelsantos32141@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10.11"
+tensorflow-io-gcs-filesystem = "0.31.0"
+spleeter = "^2.4.0"
+fastapi = "^0.115.4"
+uvicorn = "^0.32.0"
+pydantic = "^2.9.2"
+numpy = "1.x"
+python-multipart = "^0.0.17"
+
+[tool.poetry.scripts]
+start = "app.index:run"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
